@@ -1,0 +1,88 @@
+p {
+    font-family: Roboto;
+}
+
+.apple {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.new {
+    color: coral;
+    font-size: 12px;
+}
+
+.pro {
+    font-size: medium;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.super {
+    font-size: xx-large;
+    margin-top: 0;
+    margin-bottom: 5px
+}
+
+.price {
+    color: gray;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.buy {
+    background-color: rgb(58, 127, 255);
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 50px;
+    font-size: small;
+    cursor: pointer;
+}
+
+.top {
+    font-size: xx-large;
+    margin-bottom: 5px;
+}
+
+.currency {
+    font-size: small;
+    color: gray;
+}
+
+.rise {
+    color: green;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.bottom {
+    margin-top: 0;
+    color: gray;
+}
+
+.dip {
+    color: red;
+}
+
+.user {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tag {
+    font-weight: normal;
+    color: gray;
+}
+
+.content {
+    width: 500px;
+    margin-top: 0;
+}
+
+.chip {
+    color: rgb(0, 140, 255);
+}

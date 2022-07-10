@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Div Basics</title>
+    <style>
+        body{
+            font-family: Roboto;
+        }
+        .red{
+            width: 70px;
+            height: 70px;
+            background-color: red;
+            display: inline-block;
+        }
+        .green{
+            background-color: green;
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            margin-left: 20px;
+            border-radius: 100%;
+            
+        }
+        .service{
+            border-width: 1px;
+            width: 250px;
+            border-color: gray;
+            border-style: solid;
+            padding-bottom: 15px;
+            padding-left: 12px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .install{
+            background-color: rgb(34, 34, 34);
+            padding: 10px;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        .install-header{
+            color: white;
+            font-weight: bold;
+            font-size: large;
+            margin-bottom: 0;
+        }
+        .install-desc{
+            font-size: small;
+            color: gray;
+            margin-top: 10px;
+        }
+        .container{
+            padding: 5px;
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+        }
+        .content{
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            border-radius: 4px 4px 3px 3px;
+        }
+        .profile{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 3px 3px 0 0; 
+        }
+        .details{
+            padding: 0 10px 10px 10px;
+        }
+        .user{
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .mutual{
+            margin-top: 0;
+            font-size: small;
+            color: gray;
+            display: inline-block;
+        }
+        .mutual-img{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            object-position: center;
+            vertical-align: middle;
+            border-radius: 100%;
+        }
+        .add{
+            background-color: rgb(0, 83, 236);
+            border: none;
+            color: white;
+            padding: 9px 16px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="service">
+        <p>Satisfied with our service</p>
+        <button>Yes</button>
+        <button>No</button>
+    </div>
+    <div class="install">
+        <p class="install-header">Install Youtube Music</p>
+        <p class="install-desc">Add Youtube Music to your desktop for quick and easy access</p>
+    </div>
+    <div class="container">
+        <div class="content">
+            <img class="profile" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F2%2F0%2Fa%2F480335.jpg&f=1&nofb=1" alt="">
+            <div class="details">
+                <p class="user">Harvey Specter</p>
+                <div class="mutuals">
+                    <img class="mutual-img" src="https://i.pinimg.com/originals/df/d1/6f/dfd16f56c15fdd9bfb12c4f569d481a1.jpg" alt="">
+                    <p class="mutual">2 mutual friends</p>
+                </div>
+                <button class="add">Add Friend</button>
+            </div>
+        </div>
+        <div class="content">
+            <img class="profile" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fheroandvillainstyle.com%2Fwp-content%2Fuploads%2F2020%2F09%2FMike-Ross-Crew-Cut-Hairstyle-e1599847830108.jpg&f=1&nofb=1" alt="">
+            <div class="details">
+                <p class="user">Mike Ross</p>
+                <div>
+                    <img class="mutual-img" src="https://i.pinimg.com/originals/df/d1/6f/dfd16f56c15fdd9bfb12c4f569d481a1.jpg" alt="">
+                    <p class="mutual">5 mutual friends</p>
+                </div>
+                <button class="add">Add Friend</button>
+            </div>
+        </div>
+        <div class="content">
+            <img class="profile" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fe5%2F76%2F57%2Fe57657fa062d1352e1f50f31f415aeb6.jpg&f=1&nofb=1" alt="">
+            <div class="details">
+                <p class="user">Louis Litt</p>
+                <div>
+                    <img class="mutual-img" src="https://i.pinimg.com/originals/df/d1/6f/dfd16f56c15fdd9bfb12c4f569d481a1.jpg" alt="">
+                    <p class="mutual">1 mutual friends</p>
+                </div>
+                
+                <button class="add">Add Friend</button>
+            </div>
+        </div>
+    </div>
+    <style>
+        .nested{
+            margin-bottom: 10px;
+        }
+        .badge-img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 100%;
+        }
+        .nested p{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .badge{
+            display: inline-block;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+        .user-info{
+            vertical-align: middle;
+            display: inline-block;
+            width: 300px;
+        }
+        .action-follow{
+             vertical-align: middle;
+            display: inline-block;
+        }
+        .user-name{
+            font-weight: bold;
+        }
+        .bio{
+            color: #606060;
+            font-size: 15px;
+        }
+        .popular{
+            color:#606060;
+            font-size:small;
+        }
+        .follow-button{
+            color: white;
+            border: none;
+            background-color: rgb(0, 110, 255);
+            padding: 9px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+    </style>
+    <div class="nested">
+        <div class="badge">
+            <img class="badge-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.independent.co.uk%2F2021%2F04%2F22%2F13%2FnewFile-6.jpg%3Fwidth%3D1200%26auto%3Dwebp%26quality%3D75&f=1&nofb=1" alt="">
+        </div>
+        <div class="user-info">
+            <p class="user-name">Snow</p>
+            <p class="bio">King in the North</p>
+            <p class="popular">Popular</p>
+        </div>
+        <div class="action-follow">
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+    <div class="nested">
+        <div class="badge">
+            <img class="badge-img"
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpapergeeks.com%2Fwp-content%2Fuploads%2F2014%2F06%2FCat-Mustache-Wallpaper.jpg&f=1&nofb=1"
+                alt="">
+        </div>
+        <div class="user-info">
+            <p class="user-name">Oberyn</p>
+            <p class="bio">Blind Martell</p>
+            <p class="popular">Popular</p>
+        </div>
+        <div class="action-follow">
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+    <div class="nested" style="margin-bottom: 20px;">
+        <div class="badge">
+            <img class="badge-img"
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-kLjgbxbdd3M%2FWk_uRD6-UUI%2FAAAAAAAAHc0%2F1KHrzTYs-QsbDjEZRw1AU6XturrQKuMRwCLcBGAs%2Fs1600%2Fmaine-coon-2.jpg&f=1&nofb=1"
+                alt="">
+        </div>
+        <div class="user-info">
+            <p class="user-name">Sansa</p>
+            <p class="bio">Queen Stark</p>
+            <p class="popular">Popular</p>
+        </div>
+        <div class="action-follow">
+            <button class="follow-button">Follow</button>
+        </div>
+    </div>
+<style>
+    .youtube-list{
+       margin-bottom: 5px;
+    }
+    .youtube-list p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .list-thumb{
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .list-info{
+        vertical-align: top;
+        display: inline-block;
+        width: 300px;
+    }
+    .list-title{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 22px;
+    }
+    .list-creator, .list-stat{
+        font-size: 13px;
+        color: #606060;
+    }
+    p.list-creator{
+        margin-top: 5px;
+    }
+    p.list-stat{
+        margin-top: 2px;    
+    }
+</style>
+    <div class="youtube-list">
+        <div class="list-thumb">
+            <img class="thumb-img" src="https://i.ytimg.com/vi/h-grthPvpB0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAH9rWwqsZzyuaWwAPHig2HXrl4qQ" alt="">
+        </div>
+        <div class="list-info">
+            <p class="list-title">How (in 2022) to become a software engineer with no experience</p>
+            <p class="list-creator">SuperSimpleDev</p>
+            <p class="list-stat">289K views &#183; 1 year ago</p>
+        </div>
+    </div>
+    <div class="youtube-list">
+        <div class="list-thumb">
+            <img class="thumb-img"
+                src="https://i.ytimg.com/vi/MJtecK4g_28/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCkXdUricbTR_2I40A1gcOR06J7Jg"
+                alt="">
+        </div>
+        <div class="list-info">
+            <p class="list-title">Fliptop - CNine vs Castillo @ Isabuhay 2022</p>
+            <p class="list-creator">fliptopbattles</p>
+            <p class="list-stat">148K views &#183; 15 hours ago</p>
+        </div>
+    </div><div class="youtube-list">
+        <div class="list-thumb">
+            <img class="thumb-img"
+                src="https://i.ytimg.com/vi/20QiX8rmHnU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCLKe_wua20KLHVtlmvFE5xyUw83w"
+                alt="">
+        </div>
+        <div class="list-info">
+            <p class="list-title">I've been challenged to a CSS Battle rematch | Can I beat him again???</p>
+            <p class="list-creator">Kevin Powell</p>
+            <p class="list-stat">761K views &#183; 1 year ago</p>
+        </div>
+    </div>
+</body>
+</html>

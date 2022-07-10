@@ -1,0 +1,72 @@
+<style>
+button{
+    padding: 7px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+a{
+    margin: 5px;
+}
+.stretch{
+    background-color: green;
+    border: none;
+    color: white;
+    transition: padding 0.5s;
+    margin-right: 15px;
+}
+.stretch:hover{
+    padding: 15px 30px;
+}
+.shadow{
+    background-color: green;
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.15s, background-color 0.15s;
+}
+.shadow:active{
+    box-shadow: none;
+    background-color: rgb(2, 110, 2);
+}
+.number{
+    background-color: green;
+    color: white;
+    border: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: padding 0.15s, margin-right 0.15s, margin-left 0.15s;
+}
+.number.one:hover{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 9px 20px;
+}
+.number.two:hover{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 9px 20px;
+}
+.number.three:hover{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 9px 20px;
+}
+
+
+</style>
+<button>Back</button>
+<a href="">1</a>
+<a href="">2</a>
+<a href="">3</a>
+<a href="">4</a>
+<a href="">5</a>
+<button>Next</button>
+<br><br>
+<button class="stretch">Stretch</button>
+<button class="shadow">Shadow</button>
+<br><br>
+<button class="number one">One</button>
+<button class="number two">Two</button>
+<button class="number three">Three</button>

@@ -1,0 +1,192 @@
+<style>
+.subscribe{
+    background-color: rgb(200, 0, 0);
+    /* 255 max */
+    /* all 255 is white */
+    /* all 0 is black */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    vertical-align: top;
+}
+/* pseudo class */
+.subscribe:hover{
+    opacity: 0.8;
+}
+.subscribe:active{
+    opacity: 0.5;
+}
+
+.join{
+    background-color: white;
+    color: #065fd4;
+    border-color: #065fd4;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 9px 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: background-color 0.15s,
+    color 0.15s;
+}
+
+.join:hover{
+    background-color: #065fd4;
+    color: white;
+}
+.join:active{
+    opacity: 0.7;
+}
+
+.tweet{
+    background-color: #1d9bf0;
+    color: white;
+    font-size: 15px;
+    border-radius: 50px;
+    border: none;
+    padding: 7px 16px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+}
+.tweet:hover{
+              /* x y blur */
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.15); /* safest a ()opcity value) */
+}
+
+.uber{
+    background-color: black;
+    color: white;
+    height: 36px;
+    width: 110px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.uber:hover{
+    opacity: 0.8;
+}
+
+.amazon{
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border: none;
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.amazon:hover{
+    background-color: rgb(212, 180, 18);
+}
+
+.git{
+    background-color: rgb(46, 164, 79);
+    color: white;
+    height: 36px;
+    width: 90px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: box-shadow 0.15s;
+}
+.git:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.15);
+}
+
+.bootstrap{
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius:3px;
+    margin-right: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.15s ;
+}
+.bootstrap:hover{
+    background-color: rgb(95, 65, 141);
+}
+
+.bootstrap2{
+    background-color: white;
+    color: rgb(108, 117, 125);
+    border-style: solid;
+    border-color:rgb(108, 117, 125);
+    height: 40px;
+    width: 100px;
+    border-radius: 3px;
+    border-width: 1px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.15s, color 0.15s;
+}
+.bootstrap2:hover{
+    background-color: rgb(108, 117, 125);
+    color: white;
+}
+
+.link{
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 210px;
+    border-radius: 18px;
+    font-weight: bold;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.link:hover{
+    background-color: rgb(9, 81, 153);
+}
+
+.link2{
+    background-color: white;
+    color: rgb(10, 102, 194);
+    border-style: solid;
+    border-color: rgb(10, 102, 194);
+    border-width: 1px;
+    height: 36px;
+    width: 80px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.15s, border-width 0.15s;
+}
+.link2:hover{
+    background-color: rgb(158, 214, 252);
+    border-width: 2px;
+}
+</style>
+
+<button class="subscribe">SUBSCRIBE</button>
+<button class="join">JOIN</button>
+<button class="tweet">Tweet</button>
+<br>
+<button class="uber">Request now</button>
+<button class="amazon">Add to Cart</button>
+<button class="git">Sign up</button>
+<br>
+<button class="bootstrap">Get started</button>
+<button class="bootstrap2">Download</button>
+<br>
+<button class="link">Apply on company website</button>
+<button class="link2">Save</button>
